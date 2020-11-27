@@ -4,12 +4,30 @@ pragma solidity >=0.4.22 <0.8.0;
 contract Cancer {
 
 // mapping
-     
+    mapping( address => uint) private balances;
     mapping (uint => Progesteron) private intensity;
     mapping(uint => Estrogen) private intensify;
     mapping(uint => Type) private types;
     mapping (uint => Surgery) public Surgeries;
-    
+    mapping (address => bool) public enrolled;
+    address public owner;
+
+    event logEnrolled(address accountAddress);
+    event logDepositMade(address accountAddress, uint amount);
+    event logWithdrawal(address accountAddress, uint withdrawalAmount, uint amount);
+
+    constructor() public {
+        owner = msg.sender;
+    }
+
+    function balance () public view returns(uint) {
+        return balances[msg.sender];
+    }
+
+    function enroll() public returns (bool) {
+        address Cancer_Patient = msg.sender;
+        enrolled[Cancer_Patient] = true;
+    }
 // Cancer Grades 
      
     uint [] public Grade = 
