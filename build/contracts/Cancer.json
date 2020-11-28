@@ -15728,10 +15728,74 @@
       "links": {},
       "address": "0x770d7a1C63cF43F3416A741890300156A620d70a",
       "transactionHash": "0xcffc49412e5cf1ddb2a1a6b11a1751e0cf013e8c992598e48154af8bdcb0acb9"
+    },
+    "1606521850965": {
+      "events": {
+        "0x90bdb521cf49ea1deec2299ff6333ff3f8419d3eb93157568c1e237456e2e0d0": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "accountAddress",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "name": "logDepositMade",
+          "type": "event"
+        },
+        "0x0ee0de0c3550d10f0da5f7258a68f7b7d93acfcd6400435223dce623cb5e5977": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "accountAddress",
+              "type": "address"
+            }
+          ],
+          "name": "logEnrolled",
+          "type": "event"
+        },
+        "0x0fc65dbef4a513dae2c9d87aaaa22c7570172f98343e781e579f42f37de742be": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "accountAddress",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "withdrawalAmount",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "name": "logWithdrawal",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x53cF1d66D838277708B68241681BC7B25b9cc7Ad",
+      "transactionHash": "0x67595ba657a5cfa60d075ffe2b505cb1a29f5cbcfa3c0e514d41311cec113e53"
     }
   },
   "schemaVersion": "3.3.2",
-  "updatedAt": "2020-11-27T23:15:22.389Z",
+  "updatedAt": "2020-11-28T00:04:49.517Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {}
