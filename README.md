@@ -6,4 +6,5 @@ Web3
 Infura 
 ganache-cli
 JavaScript
+HD Wallet
 
